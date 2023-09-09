@@ -3,14 +3,14 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>about</title>
+    <title>About</title>
 
     <!-- font awesome cdn link  -->
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
     />
-
+    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
     <!-- custom css file link  -->
     <link rel="stylesheet" href="style.css" />
   </head>
@@ -18,8 +18,6 @@
     <!-- header section starts  -->
 
     <header>
-      <h1 class="heading">about us</h1>
-
       <div id="menu" class="fas fa-bars"></div>
 
       <nav class="navbar">
@@ -39,11 +37,21 @@
 
     <section class="about">
       <div class="image">
-        <img src="images/about-img.svg" alt="" />
+        <!-- https://lottie.host/?file=8e5676f9-1de6-4a8d-9d05-834cee423cf8/rFRM0szAJK.json -->
+        <lottie-player
+          src="https://lottie.host/8e5676f9-1de6-4a8d-9d05-834cee423cf8/rFRM0szAJK.json"
+          background="#fff"
+          speed="1"
+          style="width: 500px; height: 500px"
+          loop
+          autoplay
+          direction="1"
+          mode="normal"
+        ></lottie-player>
       </div>
 
       <div class="content">
-        <h1>a word about us</h1>
+        <h1>why choose us</h1>
         <p>
           Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatibus
           optio, a numquam esse ipsum iure. Modi autem blanditiis nulla
@@ -55,7 +63,7 @@
           repellendus! Accusantium doloremque placeat eaque eligendi quaerat?
           Cupiditate, quae corrupti?
         </p>
-        <a href="#"><button class="btn">learn more</button></a>
+        <button>Explore</button>
       </div>
     </section>
 
@@ -86,7 +94,7 @@
           <p>subscribe us for latest updates</p>
           <form action="">
             <input type="email" placeholder="your email" />
-            <input type="submit" class="btn" value="subscribe" />
+            <input type="submit" class="shadow__btn" value="Subscribe" />
           </form>
         </div>
       </div>
