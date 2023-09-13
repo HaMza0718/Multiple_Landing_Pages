@@ -1,13 +1,15 @@
-$(document).ready(function(){
+let humberger = document.getElementById("humberger");
 
-    $('#menu').click(function(){
-        $(this).toggleClass('fa-times');
-        $('.navbar').toggleClass('nav-toggle');
-    });
+humberger.addEventListener("click", () => {
+  let navbar = document.getElementById("nav");
 
-    $(window).on('load scroll',function(){
-        $('#menu').removeClass('fa-times');
-        $('.navbar').removeClass('nav-toggle');
-    });
-
+  if (navbar.style.display == "block") {
+    humberger.innerHTML = "";
+    humberger.innerHTML = `<i class="fas fa-bars"></i>`;
+    navbar.style.display = "none";
+  } else {
+    humberger.innerHTML = "";
+    humberger.innerHTML = `<i class="fas fa-times"></i>`;
+    navbar.style.display = "block";
+  }
 });
